@@ -121,6 +121,12 @@
             <version>${geoip2.version}</version>
         </dependency>
 
+		<dependency>
+			<groupId>org.springframework.experimental.ai</groupId>
+			<artifactId>spring-ai-openai-spring-boot-starter</artifactId>
+			<version>0.7.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- test -->
 
         <dependency>
@@ -250,5 +256,16 @@
         <uap-java.version>1.4.0</uap-java.version>
         <geoip2.version>2.15.0</geoip2.version>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
 
 </project>
